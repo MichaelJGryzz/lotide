@@ -28,7 +28,7 @@ const flatten = function(array) {
   array.forEach(function(element) {
     // Checks if current item is an array, if it is call flatten on it
     if (Array.isArray(element)) {
-      result = result.concat((element));
+      result = result.concat(element);
     } else {
       // If the element is not an array, push it directly to the result array
       result.push(element);
