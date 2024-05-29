@@ -33,4 +33,4 @@ assertEqual(eqArrays([false, false, false], [true, false, false]), false); // =>
 assertEqual(eqArrays([], []), true); // => should PASS
 assertEqual(eqArrays([1, 2], [1, 2, 3, 4]), false); // => should PASS
 assertEqual(eqArrays([null, undefined], [null, undefined]), true); // => should PASS
-assertEqual(eqArrays([1, 2, NaN], [1, 2, NaN]), false); // => should PASS because NaN !== NaN, therefore falsey
+assertEqual(eqArrays([1, 2, NaN], [1, 2, NaN]), false); // => should PASS (because NaN !== NaN, therefore falsey)
