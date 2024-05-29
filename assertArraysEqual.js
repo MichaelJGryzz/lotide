@@ -1,4 +1,5 @@
-// Copied function from eqArrays.js:
+// Copied eqArrays function from eqArrays.js:
+// This function checks if two arrays are equal
 const eqArrays = function(array1, array2) {
   if (array1.length !== array2.length) {
     return false;
@@ -12,6 +13,7 @@ const eqArrays = function(array1, array2) {
 };
 
 // assertArraysEqual function takes in two arrays and console.log an appropriate message to the console
+// This function asserts if two arrays are equal and logs the result
 const assertArraysEqual = function(actual, expected) {
   const isEqual = eqArrays(actual, expected);
   if (isEqual) {
