@@ -28,7 +28,7 @@ const flatten = function(array) {
   array.forEach(function(element) {
     // Checks if current item is an array, if it is call flatten on it
     if (Array.isArray(element)) {
-      result = result.concat(flatten(element));
+      result = result.concat((element));
     } else {
       // If the element is not an array, push it directly to the result array
       result.push(element);
@@ -41,13 +41,13 @@ const flatten = function(array) {
 
 // TEST CASES:
 // Test Case # 1:
-const nestedArray1 = [1, [2, [3, 4], 5]];
+const nestedArray1 = [1, 2, [3, 4], 5];
 const expectedArray1 = [1, 2, 3, 4, 5];
 const flattenedArray1 = flatten(nestedArray1);
 assertArraysEqual(flattenedArray1, expectedArray1);
 
 // Test Case #2:
-const nestedArray2 = [[1, 2], [[3, 4], 5, [6, 7], 8]];
+const nestedArray2 = [[1, 2], [3, 4], 5, [6, 7, 8]];
 const expectedArray2 = [1, 2, 3, 4, 5, 6, 7, 8];
 const flattenedArray2 = flatten(nestedArray2);
 assertArraysEqual(flattenedArray2, expectedArray2);
