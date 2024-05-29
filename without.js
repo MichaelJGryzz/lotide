@@ -25,10 +25,18 @@ const assertArraysEqual = function(actual, expected) {
 
 // Function without returns a subset of a given array, removing unwanted elements
 const without = function(sourceArray, itemsToRemoveArray) {
-  return sourceArray.filter(function(item) {
-    // The filter method creates a new array with all the elements that are not included in the itemsToRemoveArray
-    return !itemsToRemoveArray.includes(item);
-  });
+  // Create an empty array to store the result
+  const result = [];
+  // Loop through each element in sourceArray
+  for (let i = 0; i < sourceArray.length; i++) {
+    // Check if the current element is not in itemsToRemoveArray
+    if (!itemsToRemoveArray.includes(sourceArray[i])) {
+      // If the element is not in itemsToRemoveArray, add it to the result array
+      result.push(sourceArray[i]);
+    }
+  }
+  // Return the result array
+  return result;
 };
 
 // TEST CASES:
