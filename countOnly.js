@@ -50,9 +50,9 @@ const result1 = countOnly(firstNames, {
 
 console.log('Result:', result1); // Print output of countOnly for debugging
 
-assertEqual(result1["Jason"], 1); // Pass
-assertEqual(result1["Karima"], undefined); // Pass
+assertEqual(result1["Jason"], 1); // Pass; Jason appears once
+assertEqual(result1["Karima"], undefined); // Pass; Karima does not appear
 assertEqual(result1["Fang"], 2); // Pass
 assertEqual(result1["Agouhanna"], undefined); // Pass
-assertEqual(result1["Michael"], undefined); // Pass because string does not exist in input array
-assertEqual(result1["Diana"], undefined); // Pass because string does not exist in input array
+assertEqual(result1["Michael"], undefined); // Pass; string does not exist in input array
+assertEqual(result1["Diana"], undefined); // Pass; string does not exist in input array
