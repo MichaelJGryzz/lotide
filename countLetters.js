@@ -19,11 +19,27 @@ const countLetters = function(sentence) {
       }
     }
   }
-
   return letterCount;
 };
 
+const equalObjects = function(obj1, obj2) {
+  const keys1 = Object.keys(obj1);
+  const keys2 = Object.keys(obj2);
+
+  if (keys1.length !== keys2.length) {
+    return false;
+  }
+
+  for (const key of keys1) {
+    if (obj1[key] !== obj2[key]) {
+      return false;
+    }
+  }
+
+  return true;
+};
+
 // Test Code
-assertEqual(countLetters('LHL'), { l: 2, h: 1});
-assertEqual(countLetters('lighthouse in the house'), { l: 1, i: 2, g: 1, h:4, t: 2, o: 2, u: 2, s: 2, e: 3, n: 1});
-assertEqual(countLetters('Michael'), { m: 1, i: 1, c: 1, h: 1, a: 1, e: 1, l: 1});
+assertEqual(equalObjects(countLetters('LHL'), { L: 2, H: 1 }), true);
+assertEqual(equalObjects(countLetters('lighthouse in the house'), { l: 1, i: 2, g: 1, h:4, t: 2, o: 2, u: 2, s: 2, e: 3, n: 1 }), true);
+assertEqual(equalObjects(countLetters('Michael'), { M: 1, i: 1, c: 1, h: 1, a: 1, e: 1, l: 1 }), true);
