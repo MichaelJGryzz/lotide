@@ -1,12 +1,3 @@
-// assertEqual function copied from previous task
-const assertEqual = function(actual, expected) {
-  if (actual === expected) {
-    console.log(`✅✅✅ Assertion Passed: ${actual} === ${expected}`);
-  } else {
-    console.log(`🛑🛑🛑 Assertion Failed: ${actual} !== ${expected}`);
-  }
-};
-
 // Copied previously implemeted eqArrays function
 // This function checks if two arrays are equal
 const eqArrays = function(array1, array2) {
@@ -21,6 +12,15 @@ const eqArrays = function(array1, array2) {
   return true;
 };
 
+// assertEqual function copied from previous task
+const assertEqual = function(actual, expected) {
+  if (actual === expected) {
+    console.log(`✅✅✅ Assertion Passed: ${actual} === ${expected}`);
+  } else {
+    console.log(`🛑🛑🛑 Assertion Failed: ${actual} !== ${expected}`);
+  }
+};
+
 // Returns true if both objects have identical keys with identical values.
 // Otherwise you get back a big fat false!
 const eqObjects = function(object1, object2) {
@@ -33,14 +33,18 @@ const eqObjects = function(object1, object2) {
   }
 
   for (const key of keys1) {
-    if (object1[key] !== object2[key]) {
-      return false;
-    }
-  }
+    const value1 = object1[key];
+    const value2 = object2[key];
 
+    if (Array.isArray(value1) && Array.isArray(value2)) {
+      if (!eqArrays(value1,value2)) {
+        return false;
+    }
+  } else if (value1 !== value2) {
+    return false;
+  }
   return true;
 };
-
 
 // Test Code
 // Use both assertEqual and equalObjects to compare countLetters function output with expected output
