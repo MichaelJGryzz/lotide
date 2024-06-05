@@ -18,7 +18,7 @@ const countOnly = function(allItems, itemsToCount) {
       if (results[item]) {
         results[item] += 1; // Add to the count if item is already in results
       } else {
-        results[item] = 1; // Start the count if item si not in results
+        results[item] = 1; // Start the count if item is not in results
       }
     }
   }
