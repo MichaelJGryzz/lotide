@@ -1,4 +1,19 @@
+// Copied previously implemeted eqArrays function
+// This function checks if two arrays are equal
+const eqArrays = function(array1, array2) {
+  if (array1.length !== array2.length) {
+    return false;
+  }
+  for (let i = 0; i < array1.length; i++) {
+    if (array1[i] !== array2[i]) {
+      return false;
+    }
+  }
+  return true;
+};
+
 // Copied previously implemented eqObjects function
+// This function checks if two objects are equal
 const eqObjects = function(object1, object2) {
   const keys1 = Object.keys(object1);
   const keys2 = Object.keys(object2);
@@ -11,7 +26,7 @@ const eqObjects = function(object1, object2) {
   for (const key of keys1) {
 
     if (Array.isArray(object1[key]) && Array.isArray(object2[key])) {
-      if (!eqArrays(object1[key],object2[key])) {
+      if (!eqArrays(object1[key], object2[key])) {
         return false;
       }
     } else if (object1[key] !== object2[key]) {
@@ -22,14 +37,14 @@ const eqObjects = function(object1, object2) {
 };
 
 // FUNCTION IMPLEMENTATION
-const assertObjectsEqual = function (actual, expected) {
-  if (actual === expected) {
-    console.log(`✅✅✅ Assertion Passed: ${actual} === ${expected}`);
+const assertObjectsEqual = function(actual, expected) {
+  const inspect = require("util").inspect; // Line to import util library's inspect function
+  if (eqObjects(actual, expected)) {
+    console.log(`✅✅✅ Assertion Passed: ${inspect(actual)} === ${inspect(expected)}`);
   } else {
-    console.log(`🛑🛑🛑 Assertion Failed: ${actual} !== ${expected}`);
+    console.log(`🛑🛑🛑 Assertion Failed: ${inspect(actual)} !== ${inspect(expected)}`);
   }
 };
-
 
 // Direct call to assertObjects Equal function to confirm messages printed to the console are accurate
 const object1 = { a: '2', b: 4};
@@ -37,4 +52,4 @@ const object2 = { b: 4, a: '2'};
 const object3 = { a: '2', b: '4'};
 
 assertObjectsEqual(object1, object2); // Should pass
-assertObjectsEqual(object1, object3); //Should fail
+assertObjectsEqual(object1, object3); // Should fail
