@@ -39,11 +39,12 @@ const eqObjects = function(object1, object2) {
     if (Array.isArray(value1) && Array.isArray(value2)) {
       if (!eqArrays(value1,value2)) {
         return false;
+      }
+    } else if (value1 !== value2) {
+      return false;
     }
-  } else if (value1 !== value2) {
-    return false;
+    return true;
   }
-  return true;
 };
 
 // Test Code
