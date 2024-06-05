@@ -20,3 +20,21 @@ const eqObjects = function(object1, object2) {
   }
   return true;
 };
+
+// FUNCTION IMPLEMENTATION
+const assertObjectsEqual = function (actual, expected) {
+  if (actual === expected) {
+    console.log(`✅✅✅ Assertion Passed: ${actual} === ${expected}`);
+  } else {
+    console.log(`🛑🛑🛑 Assertion Failed: ${actual} !== ${expected}`);
+  }
+};
+
+
+// Direct call to assertObjects Equal function to confirm messages printed to the console are accurate
+const object1 = { a: '2', b: 4};
+const object2 = { b: 4, a: '2'};
+const object3 = { a: '2', b: '4'};
+
+assertObjectsEqual(object1, object2); // Should pass
+assertObjectsEqual(object1, object3); //Should fail
