@@ -27,7 +27,15 @@ const assertArraysEqual = function(actual, expected) {
 // letterPositions function to return all indices in the string where each character is found
 const letterPositions = function(sentence) {
   const results = {};
-  // logic to update results here
+  
+  for (let i = 0; i < sentence.length; i++) {
+    const character = sentence[i];
+    if (results[character]) {
+      results[character].push(i);
+    } else {
+      results[character] = [i];
+    }
+  }
   return results;
 };
 
