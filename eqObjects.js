@@ -43,8 +43,8 @@ const eqObjects = function(object1, object2) {
     } else if (value1 !== value2) {
       return false;
     }
-    return true;
   }
+  return true;
 };
 
 // Test Code
