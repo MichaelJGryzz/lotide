@@ -30,10 +30,12 @@ const letterPositions = function(sentence) {
   
   for (let i = 0; i < sentence.length; i++) {
     const character = sentence[i];
-    if (results[character]) {
-      results[character].push(i);
-    } else {
-      results[character] = [i];
+    if (character !== ' ') { // Check if character is not a space
+      if (results[character]) {
+        results[character].push(i);
+      } else {
+        results[character] = [i];
+      }
     }
   }
   return results;
