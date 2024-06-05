@@ -37,6 +37,7 @@ const eqObjects = function(object1, object2) {
 };
 
 // FUNCTION IMPLEMENTATION
+// This function takes two objects and prints to the console whether or not they have matching contents
 const assertObjectsEqual = function(actual, expected) {
   const inspect = require("util").inspect; // Line to import util library's inspect function
   if (eqObjects(actual, expected)) {
