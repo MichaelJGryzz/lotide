@@ -14,7 +14,6 @@ const countOnly = function(allItems, itemsToCount) {
   const results = {};
 
   for (const item of allItems) { // Loops over allItems
-    console.log(item); // Print each item to console for debugging purposes
     if (itemsToCount[item]) { // Check if the item exists and it should be counted
       if (results[item]) {
         results[item] += 1; // Add to the count if item is already in results
