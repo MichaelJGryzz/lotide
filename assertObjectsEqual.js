@@ -39,7 +39,7 @@ const eqObjects = function(object1, object2) {
 // FUNCTION IMPLEMENTATION
 // This function takes two objects and prints to the console whether or not they have matching contents
 const assertObjectsEqual = function(actual, expected) {
-  const inspect = require("util").inspect; // Line to import util library's inspect function
+  const inspect = require("util").inspect; // Line to import util library's inspect function which converts any object to a string
   if (eqObjects(actual, expected)) {
     console.log(`✅✅✅ Assertion Passed: ${inspect(actual)} === ${inspect(expected)}`);
   } else {
