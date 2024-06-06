@@ -1,9 +1,10 @@
 // Collection of words copied from Compass "Implement Map" Assignment
 const words = ["ground", "control", "to", "major", "tom"];
 
-// Define empty map function
+// Define map function
 const map = function () {
-  // empty for now :)
+  const results = [];
+  return results;
 };
 
 // Add code copied from Compass to call nonexistent "map" function to cause first error
