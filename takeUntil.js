@@ -29,7 +29,7 @@ const takeUntil = function(array, callback) {
   const result = [];
   for (const item of array) {
     if (callback(item)) {
-      break;
+      break; // Stop the loop if the callback returns truthy for the current item
     }
     result.push(item);
   }
