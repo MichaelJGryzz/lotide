@@ -6,10 +6,8 @@ const map = function(array, callback) {
   const results = [];
   // For loop to console.log each item in the provided array and what happens to the item after being passed into the callback
   for (let item of array) {
-    console.log("item BEFORE: ", item);
-    console.log("item AFTER: ", callback(item));
-    console.log("---");
-  
+    results.push(callback(item)); // Push each item into the reults array
+  }
   return results;
 };
 
