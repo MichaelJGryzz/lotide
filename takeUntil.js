@@ -36,18 +36,13 @@ const takeUntil = function(array, callback) {
   return result;
 };
 
-// Expected input copied from Compass "Implement takeUntil" Challenge
+// TEST CASES
+// Test Case # 1: Slice when you encounter a number is less than 0
 const data1 = [1, 2, 5, 7, 2, -1, 2, 4, 5];
 const results1 = takeUntil(data1, x => x < 0);
-console.log(results1);
+assertArraysEqual(results1, [ 1, 2, 5, 7, 2 ]);
 
-console.log('---');
-
+// Test Case # 2: Slice when you encounter a comma
 const data2 = ["I've", "been", "to", "Hollywood", ",", "I've", "been", "to", "Redwood"];
 const results2 = takeUntil(data2, x => x === ',');
-console.log(results2);
-
-// Expected output copied from Compass "Implement takeUntil" Challenge
-[ 1, 2, 5, 7, 2 ]
---
-[ 'I\'ve', 'been', 'to', 'Hollywood' ]
+assertArraysEqual(results2, [ 'I\'ve', 'been', 'to', 'Hollywood' ]);
