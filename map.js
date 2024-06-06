@@ -36,6 +36,15 @@ const map = function(array, callback) {
   return results;
 };
 
-// Add code copied from Compass to call nonexistent "map" function to cause first error
+// TEST CASES
+// Test Case # 1: Map the first character of each word
 const results1 = map(words, (word) => word[0]);
-console.log(results1);
+assertArraysEqual(results1, ["g", "c", "t", "m", "t"]);
+
+// Test Case # 2: Map the length of each word
+const results2 = map(words, (word) => word.length);
+assertArraysEqual(results2, [6, 7, 2, 5, 3]);
+
+// Test Case # 1: Map each word to uppercase
+const results3 = map(words, (word) => word.toUpperCase());
+assertArraysEqual(results3, ["GROUND", "CONTROL", "TO", "MAJOR", "TOM"]);
