@@ -1,4 +1,4 @@
-// Tail function definition
+// tail function definition
 const tail = function(array) {
   // Check if the array is empty or has only one element
   if (array.length <= 1) {
