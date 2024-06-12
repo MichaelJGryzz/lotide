@@ -16,3 +16,5 @@ const middle = function(array) {
   }
 };
 
+// Code to export function
+module.exports = middle;
