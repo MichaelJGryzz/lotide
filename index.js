@@ -22,7 +22,7 @@ module.exports = {
   assertEqual:        assertEqual,
   assertObjectsEqual: assertObjectsEqual,
   countLetters:       countLetters,
-  count:              countOnly,
+  countOnly:          countOnly,
   eqArrays:           eqArrays,
   eqObjects:          eqObjects,
   findKey:            findKey,
