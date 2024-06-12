@@ -36,6 +36,9 @@ const takeUntil = function(array, callback) {
   return result;
 };
 
+// Code to export function
+module.exports = takeUntil;
+
 // TEST CASES
 // Test Case # 1: Slice when you encounter a number less than 0
 const data1 = [1, 2, 5, 7, 2, -1, 2, 4, 5];
