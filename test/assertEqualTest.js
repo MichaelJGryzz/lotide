@@ -1,4 +1,4 @@
-// Require function assertEqual.js
+// Require function assertEqual
 const assertEqual = require("../assertEqual");
 
 // Test Code for assertEqual function
