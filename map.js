@@ -36,6 +36,9 @@ const map = function(array, callback) {
   return results;
 };
 
+// Code to export function
+module.exports = map;
+
 // TEST CASES
 // Test Case # 1: Map the first character of each word
 const results1 = map(words, (word) => word[0]);
