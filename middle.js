@@ -1,19 +1,4 @@
-// TEST ASSERTION FUNCTIONS
-// eqArrays function checks if two arrays are equal
-// Require function eqArrays
-const eqArrays = require("./eqArrays");
-
-// assertArraysEqual function asserts if two arrays are equal and logs the result
-const assertArraysEqual = function(actual, expected) {
-  const isEqual = eqArrays(actual, expected);
-  if (isEqual) {
-    console.log(`✅✅✅ Assertion Passed: ${actual} === ${expected}`);
-  } else {
-    console.log(`🛑🛑🛑 Assertion Failed: ${actual} !== ${expected}`);
-  }
-};
-
-// ACTUAL FUNCTION
+// middle function definition
 const middle = function(array) {
   const length = array.length;
   // Return an empty array if given array has less than 3 elements
@@ -31,10 +16,3 @@ const middle = function(array) {
   }
 };
 
-// TEST CASES
-assertArraysEqual(middle([1]), []);
-assertArraysEqual(middle([1, 2]), []);
-assertArraysEqual(middle([1, 2, 3]), [2]);
-assertArraysEqual(middle([1, 2, 3, 4]), [2, 3]);
-assertArraysEqual(middle([1, 2, 3, 4, 5, 6, 7]), [4]);
-assertArraysEqual(middle([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]), [5, 6]);
