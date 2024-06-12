@@ -2,7 +2,7 @@
 const assert = require('chai').assert;
 
 // Require head function
-const head   = require('../head');
+const head = require('../head');
 
 
 // Mocha and Chai based Test Code:
@@ -15,5 +15,8 @@ describe("#head", () => {
   });
   it("returns '5' for ['5']", () => {
     assert.strictEqual(head(['5']), '5');
+  });
+  it("returns undefined for an empty array", () => {
+    assert.strictEqual(head([]), undefined);
   });
 });
