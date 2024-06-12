@@ -12,3 +12,6 @@ const assertArraysEqual = function(actual, expected) {
     console.log(`🛑🛑🛑 Assertion Failed: ${actual} !== ${expected}`);
   }
 };
+
+// Code to export function
+module.exports = assertArraysEqual;
