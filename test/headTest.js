@@ -1,7 +1,7 @@
 // Require function assertEqual
 const assertEqual = require("../assertEqual");
 
-//Require function head
+// Require function head
 const head = require("../head");
 
 // Test Code for head function
