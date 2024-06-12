@@ -39,6 +39,9 @@ const flatten = function(array) {
   return result;
 };
 
+// Code to export function
+module.exports = flatten;
+
 // TEST CASES:
 // Test Case # 1:
 const nestedArray1 = [1, 2, [3, 4], 5];
