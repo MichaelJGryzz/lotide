@@ -36,7 +36,7 @@ const eqObjects = function(object1, object2) {
   return true;
 };
 
-// FUNCTION IMPLEMENTATION
+// assertObjectsEqual function definition
 // This function takes two objects and prints to the console whether or not they have matching contents
 const assertObjectsEqual = function(actual, expected) {
   const inspect = require("util").inspect; // Line to import util library's inspect function which converts any object to a string
@@ -46,6 +46,9 @@ const assertObjectsEqual = function(actual, expected) {
     console.log(`🛑🛑🛑 Assertion Failed: ${inspect(actual)} !== ${inspect(expected)}`);
   }
 };
+
+// Code to export function
+module.exports = assertObjectsEqual;
 
 // Direct call to assertObjects Equal function to confirm messages printed to the console are accurate
 const object1 = { a: '2', b: 4};
