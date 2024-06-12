@@ -1,8 +1,8 @@
 {
-  "name": "lotide",
+  "name": "@michaeljgryzz/lotide",
   "version": "1.0.0",
-  "description": "",
-  "main": "assertArraysEqual.js",
+  "description": "A mini clone of the Lodash library created for learning purposes.",
+  "main": "index.js",
   "directories": {
     "test": "test"
   },
@@ -13,7 +13,7 @@
     "type": "git",
     "url": "git+https://github.com/MichaelJGryzz/lotide.git"
   },
-  "author": "MichaelJGryzz",
+  "author": "Michael Jordan Gryschuk <michaeljgryschuk@gmail.com>",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/MichaelJGryzz/lotide/issues"
