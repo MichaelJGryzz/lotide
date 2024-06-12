@@ -1,7 +1,7 @@
 // Require Chai
 const assert = require('chai').assert;
 
-// Require tail function
+// Require middle function
 const middle   = require('../middle');
 
 
