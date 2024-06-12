@@ -1,4 +1,4 @@
-// FUNCTION IMPLEMENTATION
+// assertEqual function definition
 const assertEqual = function(actual, expected) {
   if (actual === expected) {
     console.log(`✅✅✅ Assertion Passed: ${actual} === ${expected}`);
@@ -7,5 +7,5 @@ const assertEqual = function(actual, expected) {
   }
 };
 
-// CODE TO EXPORT FUNCTION
+// Code to export function
 module.exports = assertEqual;
