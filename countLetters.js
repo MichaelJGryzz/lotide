@@ -23,6 +23,9 @@ const countLetters = function(sentence) {
   return letterCount;
 };
 
+// Code to export function
+module.exports = countLetters;
+
 // Helper function to check of two objects are equal by comparing both keys and values
 const equalObjects = function(obj1, obj2) {
   const keys1 = Object.keys(obj1);
@@ -42,6 +45,7 @@ const equalObjects = function(obj1, obj2) {
 
   return true;
 };
+
 
 // Test Code
 // Use both assertEqual and equalObjects to compare countLetters function output with expected output
