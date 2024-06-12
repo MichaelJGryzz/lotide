@@ -1,12 +1,4 @@
-// Copied function from assertEqual.js file:
-const assertEqual = function(actual, expected) {
-  if (actual === expected) {
-    console.log(`✅✅✅ Assertion Passed: ${actual} === ${expected}`);
-  } else {
-    console.log(`🛑🛑🛑 Assertion Failed: ${actual} !== ${expected}`);
-  }
-};
-
+// eqArrays function definition
 // eqArrays function takes in two arrays and returns true or false based on a perfect match.
 const eqArrays = function(array1, array2) {
   // Checks if length are the same; will not enter for loop if they aren't the same
