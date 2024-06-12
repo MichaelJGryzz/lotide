@@ -39,6 +39,9 @@ const without = function(sourceArray, itemsToRemoveArray) {
   return result;
 };
 
+// Code to export function
+module.exports = without;
+
 // TEST CASES:
 // Test Case # 1:
 const providedArray1 = [1, 2, 3];
