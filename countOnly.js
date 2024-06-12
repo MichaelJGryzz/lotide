@@ -26,6 +26,9 @@ const countOnly = function(allItems, itemsToCount) {
   return results;
 };
 
+// Code to export function
+module.exports = countOnly;
+
 // Provided array of names
 const firstNames = [
   "Karl",
