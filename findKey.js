@@ -16,6 +16,9 @@ const findKey = function(object, callback) {
   return undefined; // Return undefined if no match is found
 };
 
+// Code to export function
+module.exports = findKey;
+
 // Test Code
 const restaurants = {
   "Blue Hill": { stars: 1 },
