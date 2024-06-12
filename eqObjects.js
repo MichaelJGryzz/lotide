@@ -45,6 +45,9 @@ const eqObjects = function(object1, object2) {
   return true;
 };
 
+// Code to export function
+module.exports = eqObjects;
+
 // Test Code
 // Use both assertEqual and equalObjects to compare countLetters function output with expected output
 // Test Case # 1
