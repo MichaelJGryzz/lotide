@@ -1,16 +1,7 @@
 // TEST ASSERTION FUNCTIONS
 // eqArrays function checks if two arrays are equal
-const eqArrays = function(array1, array2) {
-  if (array1.length !== array2.length) {
-    return false;
-  }
-  for (let i = 0; i < array1.length; i++) {
-    if (array1[i] !== array2[i]) {
-      return false;
-    }
-  }
-  return true;
-};
+// Require function eqArrays
+const eqArrays = require("./eqArrays");
 
 // assertArraysEqual function asserts if two arrays are equal and logs the result
 const assertArraysEqual = function(actual, expected) {
