@@ -24,6 +24,7 @@ const equalObjects = function(obj1, obj2) {
   return true;
 };
 
+
 // Mocha and Chai based Test Code:
 describe("#countLetters", () => {
   it("returns { L: 2, H: 1 } for 'LHL'", () => {
