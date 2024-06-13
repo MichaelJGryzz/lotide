@@ -5,11 +5,18 @@ const assert = require('chai').assert;
 const assertObjectsEqual = require('../assertObjectsEqual');
 
 
-/*
-// Direct call to assertObjects Equal function to confirm messages printed to the console are accurate
-const object1 = { a: '2', b: 4};
-const object2 = { b: 4, a: '2'};
-const object3 = { a: '2', b: '4'};
-
-assertObjectsEqual(object1, object2); // Should pass
-assertObjectsEqual(object1, object3); // Should fail (on purpose!)*/
+// Mocha and Chai based Test Code:
+describe("#assertObjectsEqual", () => {
+  // Test Case # 1: Should pass
+  it("should pass for objects with same key-value pairs in different order", () => {
+    const object1 = { a: '2', b: 4 };
+    const object2 = { b: 4, a: '2' };
+    assertObjectsEqual(object1, object2);
+  });
+  // Test Case # 2: Should fail (on purpose!)
+  it("should fail for objects with different values for same keys", () => {
+    const object1 = { a: '2', b: 4 };
+    const object3 = { a: '2', b: '4' };
+    assertObjectsEqual(object1, object3);
+  });
+});
