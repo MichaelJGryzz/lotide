@@ -41,11 +41,3 @@ describe("#countLetters", () => {
     assert.strictEqual(equalObjects(countLetters('Michael'), expectedOutput), true);
   });
 });
-
-/*
-// Test Code
-// Use both assertEqual and equalObjects to compare countLetters function output with expected output
-assertEqual(equalObjects(countLetters('LHL'), { L: 2, H: 1 }), true);
-assertEqual(equalObjects(countLetters('lighthouse in the house'), { l: 1, i: 2, g: 1, h:4, t: 2, o: 2, u: 2, s: 2, e: 3, n: 1 }), true);
-assertEqual(equalObjects(countLetters('Michael'), { M: 1, i: 1, c: 1, h: 1, a: 1, e: 1, l: 1 }), true);
-*/
