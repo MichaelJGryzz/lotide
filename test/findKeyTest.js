@@ -15,6 +15,7 @@ const restaurants = {
   Akelarre: { stars: 3 },
 };
 
+
 // Mocha and Chai based Test Code:
 describe("#findKey", () => {
   it("returns 'noma' for stars === 2", () => {
