@@ -4,6 +4,9 @@ const eqArrays = require('../eqArrays');
 // Require assertArraysEqual function
 const assertArraysEqual = require('../assertArraysEqual');
 
+// Require flatten function
+const flatten = require('../flatten');
+
 
 // TEST CASES:
 // Test Case # 1:
