@@ -12,8 +12,19 @@ const bestTVShowsByGenre = {
   action: "Sons of Anarchy",
 };
 
-/*
-assertEqual(findKeyByValue(bestTVShowsByGenre, "The Wire"), "drama");
-assertEqual(findKeyByValue(bestTVShowsByGenre, "That '70s Show"), undefined); // TV Show not in test object
-assertEqual(findKeyByValue(bestTVShowsByGenre, "Sons of Anarchy"), "action");
-assertEqual(findKeyByValue(bestTVShowsByGenre, "Peaky Blinders"), undefined); // TV Show not in test object*/
+
+// Mocha and Chai based Test Code:
+describe("#findKeyByValue", () => {
+  it("returns 'drama' for 'The Wire'", () => {
+    assert.strictEqual(findKeyByValue(bestTVShowsByGenre, "The Wire"), "drama");
+  });
+  it("returns undefined for 'That '70s Show'", () => {
+    assert.strictEqual(findKeyByValue(bestTVShowsByGenre, "That '70s Show"), undefined);
+  });
+  it("returns 'action' for 'Sons of Anarchy'", () => {
+    assert.strictEqual(findKeyByValue(bestTVShowsByGenre, "Sons of Anarchy"), "action");
+  });
+  it("returns undefined for 'Peaky Blinders'", () => {
+    assert.strictEqual(findKeyByValue(bestTVShowsByGenre, "Peaky Blinders"), undefined);
+  });
+});
