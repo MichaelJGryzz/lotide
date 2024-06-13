@@ -24,9 +24,28 @@ const equalObjects = function(obj1, obj2) {
   return true;
 };
 
+// Mocha and Chai based Test Code:
+describe("#countLetters", () => {
+  it("returns { L: 2, H: 1 } for 'LHL'", () => {
+    const expectedOutput = { L: 2, H: 1 };
+    assert.strictEqual(equalObjects(countLetters('LHL'), expectedOutput), true);
+  });
 
+  it("returns correct counts for 'lighthouse in the house'", () => {
+    const expectedOutput = { l: 1, i: 2, g: 1, h: 4, t: 2, o: 2, u: 2, s: 2, e: 3, n: 1 };
+    assert.strictEqual(equalObjects(countLetters('lighthouse in the house'), expectedOutput), true);
+  });
+
+  it("returns { M: 1, i: 1, c: 1, h: 1, a: 1, e: 1, l: 1 } for 'Michael'", () => {
+    const expectedOutput = { M: 1, i: 1, c: 1, h: 1, a: 1, e: 1, l: 1 };
+    assert.strictEqual(equalObjects(countLetters('Michael'), expectedOutput), true);
+  });
+});
+
+/*
 // Test Code
 // Use both assertEqual and equalObjects to compare countLetters function output with expected output
 assertEqual(equalObjects(countLetters('LHL'), { L: 2, H: 1 }), true);
 assertEqual(equalObjects(countLetters('lighthouse in the house'), { l: 1, i: 2, g: 1, h:4, t: 2, o: 2, u: 2, s: 2, e: 3, n: 1 }), true);
 assertEqual(equalObjects(countLetters('Michael'), { M: 1, i: 1, c: 1, h: 1, a: 1, e: 1, l: 1 }), true);
+*/
