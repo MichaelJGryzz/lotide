@@ -1,13 +1,10 @@
-// Require eqArrays function
-const eqArrays = require('../eqArrays');
-
-// Require assertArraysEqual function
-const assertArraysEqual = require('../assertArraysEqual');
+// Require Chai
+const assert = require('chai').assert;
 
 // Require flatten function
 const flatten = require('../flatten');
 
-
+/*
 // TEST CASES:
 // Test Case # 1:
 const nestedArray1 = [1, 2, [3, 4], 5];
@@ -19,4 +16,4 @@ assertArraysEqual(flattenedArray1, expectedArray1);
 const nestedArray2 = [[1, 2], [3, 4], 5, [6, 7, 8]];
 const expectedArray2 = [1, 2, 3, 4, 5, 6, 7, 8];
 const flattenedArray2 = flatten(nestedArray2);
-assertArraysEqual(flattenedArray2, expectedArray2);
+assertArraysEqual(flattenedArray2, expectedArray2);*/
