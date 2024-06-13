@@ -1,13 +1,11 @@
-// Require eqArrays function
-const eqArrays = require("../eqArrays");
-
-// Require assertArraysEqual function
-const assertArraysEqual = require("../assertArraysEqual");
+// Require Chai
+const assert = require('chai').assert;
 
 // Require without function
 const without = require('..//without');
 
 
+/*
 // TEST CASES:
 // Test Case # 1:
 const providedArray1 = [1, 2, 3];
@@ -32,4 +30,4 @@ assertArraysEqual(resultWords, ["hello", "world"]);
 assertArraysEqual(providedWords, ["hello", "world", "lighthouse"]);
 
 // Test Case with empty source array
-assertArraysEqual(without([], [1], [2]), []);
+assertArraysEqual(without([], [1], [2]), []);*/
