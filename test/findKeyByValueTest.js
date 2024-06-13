@@ -1,7 +1,10 @@
-// Require head function
+// Require Chai
+const assert = require('chai').assert;
+
+// Require findKeyByValue function
 const findKeyByValue = require('../findKeyByValue');
 
-// Test Code
+// Provided object of TV shows by genre
 const bestTVShowsByGenre = {
   sci_fi: "The Expanse",
   comedy: "Brooklyn Nine-Nine",
