@@ -1,9 +1,6 @@
 // Require Chai
 const assert = require('chai').assert;
 
-// Require assertEqual function
-const assertEqual = require('../assertEqual');
-
 // Require countLetters function
 const countLetters = require('../countLetters');
 
