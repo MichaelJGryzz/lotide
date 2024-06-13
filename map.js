@@ -1,3 +1,4 @@
+// NOT A REQUIRED FUNCTION FOR LOTIDE PROJECT
 // Copied previously implemented eqArrays and assertArraysEqual functions:
 // eqArrays function checks if two arrays are equal
 const eqArrays = function(array1, array2) {
@@ -14,14 +15,8 @@ const eqArrays = function(array1, array2) {
 
 // assertArraysEqual function takes in two arrays and console.log an appropriate message to the console
 // This function asserts if two arrays are equal and logs the result
-const assertArraysEqual = function(actual, expected) {
-  const isEqual = eqArrays(actual, expected);
-  if (isEqual) {
-    console.log(`✅✅✅ Assertion Passed: ${actual} === ${expected}`);
-  } else {
-    console.log(`🛑🛑🛑 Assertion Failed: ${actual} !== ${expected}`);
-  }
-};
+// Require assertArraysEqual function
+const assertArraysEqual  = require('./assertArraysEqual');
 
 // Collection of words copied from Compass "Implement Map" Assignment
 const words = ["ground", "control", "to", "major", "tom"];
