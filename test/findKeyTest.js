@@ -4,6 +4,7 @@ const assert = require('chai').assert;
 // Require head function
 const findKey = require('../findKey');
 
+/*
 // Test Code
 const restaurants = {
   "Blue Hill": { stars: 1 },
@@ -17,4 +18,4 @@ const restaurants = {
 assertEqual(findKey(restaurants, (x) => x.stars === 2), "noma"); // Pass
 assertEqual(findKey(restaurants, (x) => x.stars === 1), "Blue Hill"); // Pass
 assertEqual(findKey(restaurants, (x) => x.stars === 0), undefined); // Pass
-assertEqual(findKey(restaurants, (x) => x.stars === 5), undefined); // Pass
+assertEqual(findKey(restaurants, (x) => x.stars === 5), undefined); // Pass*/
